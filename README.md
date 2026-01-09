@@ -18,7 +18,7 @@ This portfolio website was created to showcase my skills as part of my applicati
 
 ## Live Website
 
-[View Live Website](https://github.com/Cristopher-Artacho-WVSU/Cristopher-WVSU-Portfolio.git)
+[View Live Website](https://cristopher-wvsu-portfolio.vercel.app/)
 
 ---
 
