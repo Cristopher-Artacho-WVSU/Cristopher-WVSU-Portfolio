@@ -65,7 +65,7 @@ const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
               className={`xl:px-[1rem] xl:py-[0.5rem] xl:text-xl_intro
                 lg:text-lg_intro md:text-md_intro
                 py-[0.375rem] text-sm_intro px-[0.75rem]
-                ${index === 0 ? "bg-highlight text-misc" : "text-white"}`}
+                ${index === 0 ? "bg-highlight text-misc" : "text-font"}`}
             >
               {tag}
             </span>
@@ -79,12 +79,12 @@ const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
             lg:text-lg_heading3
               md:text-md_heading3 
               text-sm_heading3
-              font-bold text-font_white">
+              font-bold text-font">
               {project.title}
             </h3>
             <p className="xl:text-xl_intro lg:text-lg_intro
               md:text-md_intro text-sm_intro
-              font-light text-font_white">
+              font-light text-font">
               {project.description}
             </p>
           </div>
@@ -96,7 +96,7 @@ const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
             rel="noopener noreferrer"
             className="xl:text-xl_intro lg:text-lg_intro
               md:text-md_intro text-sm_intro
-              text-font_white text-inter"
+              text-font text-inter"
           >
             View Project →
           </a>

@@ -8,7 +8,7 @@ const Footer = () => {
             lg:text-lg_content
             md:text-md_content
             text-sm_content
-             font-normal text-font_white font-inter pb-[1rem]">Cristopher Ian Artacho</p>
+             font-normal text-font font-inter pb-[1rem]">Cristopher Ian Artacho</p>
             <div className="flex gap-4 items-center justify-center gap-[2.5rem]">
   <a
     href="https://github.com/Cristopher-Artacho-WVSU"

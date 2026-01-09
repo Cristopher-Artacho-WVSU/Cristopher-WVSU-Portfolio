@@ -24,7 +24,7 @@ html, body {
   height: 100%;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #212529;
+  
 }
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -34,4 +34,20 @@ html, body {
   -ms-overflow-style: none; /* IE, Edge */
   scrollbar-width: none; /* Firefox */
 }
-  
+
+:root {
+  --color-misc: #212529;
+  --color-font: #ffffff;
+  --color-highlight: #fcbf49;
+}
+
+.dark {
+  --color-misc: #ffffff;
+  --color-font: #212529;
+  --color-highlight: #fcbf49; /* or adjust if needed */
+  --text-shadow-light: none;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 

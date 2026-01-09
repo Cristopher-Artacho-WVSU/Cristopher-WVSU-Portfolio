@@ -65,7 +65,7 @@ const ContactForm = () => {
         lg:gap-[1rem] lg:pt-[1rem] lg:text-lg_content
         md:gap-[0.75rem] lg:pt-[0.5rem] md:items-start md:text-md_content
         gap-[0.5rem] pt-[1rem] items-start text-sm_content
-        w-auto flex flex-col justify-center items-center font-inter
+        w-auto flex flex-col justify-center items-center font-inter 
       "
     >
       <input
@@ -77,7 +77,7 @@ const ContactForm = () => {
         required
         className="lg:py-[1rem]
         md:py-[0.5rem]
-        pl-[0.5rem] py-[0.5rem] w-full bg-white text-black outline-none focus:ring-2 focus:ring-misc "
+        pl-[0.5rem] py-[0.5rem] w-full bg-white text- focus:ring-2 focus:ring-font border border-misc-300"
       />
 
       <input
@@ -88,7 +88,7 @@ const ContactForm = () => {
         onChange={handleChange}
         required
         className=" lg:py-[1rem]
-        pl-[0.5rem] py-[0.5rem] w-full bg-white text-misc outline-none focus:ring-2 focus:ring-misc"
+        pl-[0.5rem] py-[0.5rem] w-full bg-white text-misc outline-none focus:ring-2 focus:ring-misc border border-misc-300"
       />
       <textarea
         rows={5}
@@ -98,7 +98,7 @@ const ContactForm = () => {
         onChange={handleChange}
         required
         className=" lg:py-[1rem]
-        pl-[0.5rem] py-[0.5rem] w-full bg-white text-misc outline-none resize-none focus:ring-2 focus:ring-misc"
+        pl-[0.5rem] py-[0.5rem] w-full bg-white text-misc outline-none resize-none focus:ring-2 focus:ring-misc border border-misc-300"
       />
 
       <button

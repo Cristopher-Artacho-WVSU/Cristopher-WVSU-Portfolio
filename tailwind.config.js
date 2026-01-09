@@ -8,9 +8,9 @@ export default {
         "DM_Sans": ['"DM Sans"', "sans-serif"]
       },
       colors:{
-        misc: "#212529",
-        highlight: "#fcbf49",
-        font_white: "#FFFFFF",
+        misc: "var(--color-misc)",
+        highlight: "var(--color-highlight)",
+        font: "var(--color-font)"
       },
       fontSize:{
         xl_heading1: "85px",

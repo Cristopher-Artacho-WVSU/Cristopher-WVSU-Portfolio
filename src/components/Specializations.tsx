@@ -1,5 +1,5 @@
 import { useEffect, useRef,  } from "react";
-
+import { Globe, Gamepad, Code } from "lucide-react";
 
 const Specializations = () => {
   const sliderRef = useRef<HTMLDivElement | null>(null);
@@ -56,12 +56,9 @@ const Specializations = () => {
         lg:h-[14rem] lg:w-[14rem] 
         md:h-[13rem] md:w-[13rem] md:gap-[0.5rem] md:p-[1rem]
         h-[13rem] w-[13rem] gap-[0.5rem] p-[1rem] flex-none snap-center shrink-0
-        bg-misc flex flex-col text-font_white relative">
-      <img
-        src="/icons/website-page-web-svgrepo-com.svg"
-        alt="Website Development"
-        className="w-12 h-12
-        "/>
+        bg-misc flex flex-col text-font relative">
+
+     <Globe className="w-12 h-12 text-font"/>
 
       <p className="xl:text-xl_content xl:pt-[1rem]
       lg:text-lg_content lg:pt-[1rem]
@@ -89,11 +86,8 @@ const Specializations = () => {
     md:h-[13rem] md:w-[13rem] md:gap-[0.5rem] md:p-[1rem]
     h-[13rem] w-[13rem] gap-[0.5rem] p-[1rem] flex-none snap-center shrink-0
         bg-highlight flex flex-col text-misc relative">
-      <img
-        src="/icons/gametree-svgrepo-com.svg"
-        alt="Game Development"
-        className="w-12 h-12
-        "/>
+
+      <Gamepad className="w-12 h-12 text-misc"/>
 
       <p className="xl:text-xl_content xl:pt-[1rem]
       lg:text-lg_content lg:pt-[1rem]
@@ -120,12 +114,9 @@ const Specializations = () => {
     lg:h-[15rem] lg:w-[15rem] lg:gap-[0.5rem] lg:p-[1rem]
     md:h-[13rem] md:w-[13rem] md:gap-[0.5rem] md:p-[1rem]
     h-[13rem] w-[13rem] gap-[0.5rem] p-[1rem] flex-none snap-center shrink-0
-        bg-misc flex flex-col text-font_white relative">
-      <img
-        src="/icons/coding-svgrepo-com.svg"
-        alt="Computer Science"
-        className="w-12 h-12
-        "/>
+        bg-misc flex flex-col text-font relative">
+          
+      <Code className="w-12 h-12 text-font"/>
 
       <p className="xl:text-xl_content xl:pt-[1rem]
       lg:text-lg_content lg:pt-[1rem]
