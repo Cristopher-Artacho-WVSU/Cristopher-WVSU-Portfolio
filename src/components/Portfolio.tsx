@@ -3,7 +3,7 @@ import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { forwardRef } from "react";
 
-const Portfolio = forwardRef<HTMLDivElement>((props, ref) => {
+const Portfolio = forwardRef<HTMLDivElement>((_, ref) => {
   const [projectList, setProjectList] = useState<any[]>([]);
 
   useEffect(() => {

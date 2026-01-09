@@ -31,12 +31,11 @@ const scrollRight = () => {
     <div>
       {/* LAYER 1 */}
       <Navbar/>
-      <div className=" lg:pr-[0rem]
-        md:pr-[8rem]
+      <div id="home" className="
         md:flex min-h-screen relative">
 
           {/* INTRODUCTION */}
-          <div className=" xl:pl-[5rem] xl:pt-[5rem] xl:mr-[5rem]
+          <div className=" xl:pl-[5rem] xl:pt-[5rem] xl:mr-[2rem]
           lg:pl-[4rem] lg:pt-[7rem]
           md:pl-[3rem] md:pt-[9rem] md:order-1 md:items-start md:text-start md:px-[0rem]
           pt-[16rem] px-[8rem]
@@ -136,12 +135,12 @@ const scrollRight = () => {
           <div
   className="
     absolute inset-0 z-0 bg-cover bg-center
-    md:relative md:top-0 md:w-full order-1 md:order-2
+    md:relative md:top-0 md:w-full order-1 md:order-2 xl:pr-[1rem] 
   ">
     <img
     src="/images/pict.png"
     alt="Background"
-    className=" xl:aspect-[1] 
+    className="
       lg:aspect-[1] 
       md:aspect-[1/1.5] 
       md:relative md:mt-[15vh] md:w-auto md:h-auto 
@@ -231,7 +230,7 @@ const scrollRight = () => {
       </div>
 
       {/* LAYER 2 - PROJECTS */}
-      <div className="xl:px-[5rem]
+      <div id="projects" className="xl:px-[5rem]
       lg:px-[6rem]
       md:px-[5rem] md:pt-[0]
       px-[2rem] pt-[2rem]
@@ -308,19 +307,30 @@ const scrollRight = () => {
       </div>
     </div>
       {/* LAYER 3 - CONTACT */}
-      <div className="md:flex
+      <div id="contact" className="md:flex
       pt-[3rem] min-h-screen relative">
         <div className="flex">
           {/* PHOTO */}
-          <div className="md:static
-          absolute inset-0 w-full h-full bg-cover bg-black z-10">
-
+          <div className="hidden md:block md:static
+          absolute inset-0 pl-[10rem] w-full h-full bg-cover z-10">
+            <img
+          src="/images/sub.jpg"
+          alt="Background"
+          className=" xl:aspect-[1] 
+            lg:aspect-[1] 
+            md:aspect-[1/1.5] 
+            md:relative md:mt-[15vh] md:w-auto md:h-auto 
+            order-1 md:order-2 
+            mt-[5vh] aspect-[1/1.45] 
+          "
+  />
           </div>
           {/* FORM */}
           <div className=" xl:px-[5rem] 
           lg:px-[3.75rem] 
-          md:px-[2rem]
-          px-[2rem]
+          md:px-[2rem] md:mt-[4rem]
+          px-[2rem] 
+          mt-[4rem]
           w-full relative z-20">
             <div className="
             md:gap-[1rem] 

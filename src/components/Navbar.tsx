@@ -1,33 +1,45 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navContent = [
-    { webPage: "Home", url: "/" },
-    { webPage: "Projects", url: "/" },
-    { webPage: "Contact", url: "/" },
+    { webPage: "Home", id: "home" },
+    { webPage: "Projects", id: "projects" },
+    { webPage: "Contact", id: "contact" },
   ];
+
+  const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (!element) return;
+
+  element.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+
+  setOpen(false); // close mobile menu
+};
 
   return (
     <>
       {/* DESKTOP NAVBAR */}
       <nav
         className="
-          fixed top-0 left-0 z-50
+          md:w-[98vw]
+          fixed top-0 left-0 z-30
           md:absolute
-          w-full
+          
           lg:text-lg_navbar
           md:text-md_navbar
-          md:h-[4rem] md:px-[4rem] md:pt-[2rem]
+          md:h-[6rem] md:px-[4rem] md:py-[2rem]
           flex items-center justify-between
-          font-inter text-font_white font-light
+          font-inter text-font_white font-light bg-misc
         "
       >
         {/* NAME */}
-        <p className="hidden md:block font-light">
+        <p className="hidden md:block font-light ">
           Cristopher Ian Artacho
         </p>
 
@@ -36,12 +48,13 @@ const Navbar = () => {
           {navContent.map((page, index) => (
             <button
               key={page.webPage}
+              onClick={() => scrollToSection(page.id)}
               className={`lg:px-[4vw] lg:h-[4rem] md:px-[3vw] md:h-[3rem] flex items-center ${
                 index === navContent.length - 1 &&
                 "lg:ml-[5rem] md:ml-[3rem] bg-highlight text-misc font-bold"
               }`}
             >
-              <Link to={page.url} className="relative group inline-block">
+               <span className="relative group inline-block cursor-pointer">
                 {page.webPage}
                 <span
                   className={`block w-0 md:h-[0.01rem] transition-all duration-300 group-hover:w-full ${
@@ -50,7 +63,7 @@ const Navbar = () => {
                       : "bg-white"
                   }`}
                 />
-              </Link>
+                </span>
             </button>
           ))}
         </div>
@@ -73,7 +86,6 @@ const Navbar = () => {
           md:hidden
         `}
       >
-        {/* CLOSE BUTTON */}
 
         {/* CONTENT */}
         <div className="pt-[5rem] px-[2rem]">
@@ -85,14 +97,13 @@ const Navbar = () => {
           {/* MENU LIST */}
           <div className="flex flex-col gap-[1.5rem]">
             {navContent.map((page) => (
-              <Link
+              <button
                 key={page.webPage}
-                to={page.url}
-                onClick={() => setOpen(false)}
-                className="text-font_white text-lg_content font-inter"
+                onClick={() => scrollToSection(page.id)}
+                className="text-font_white text-lg_content font-inter self-start"
               >
                 {page.webPage}
-              </Link>
+              </button>
             ))}
           </div>
         </div>
