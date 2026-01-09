@@ -29,7 +29,6 @@ const Navbar = () => {
     }
   }, []);
 
-  // Toggle function
   const toggleTheme = () => {
     const root = document.documentElement;
     root.classList.toggle("dark");
@@ -37,7 +36,6 @@ const Navbar = () => {
     const isNowDark = root.classList.contains("dark");
     setIsDark(isNowDark);
 
-    // Persist preference
     localStorage.setItem("theme", isNowDark ? "dark" : "light");
   };
 
@@ -59,7 +57,7 @@ const Navbar = () => {
       block: "start",
     });
 
-    setOpen(false); // close mobile menu
+    setOpen(false);
   };
 
   return (
@@ -129,7 +127,6 @@ const Navbar = () => {
         </button>
       </nav>
 
-      {/* Portal for mobile X button */}
       {open &&
         createPortal(
           <button
@@ -170,7 +167,6 @@ const Navbar = () => {
               Cristopher Ian Artacho
             </motion.p>
 
-            {/* Theme toggle button */}
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
