@@ -1,3 +1,3 @@
-declare module "../firebase" {
+declare module "./firebase" {
   export const db: any;
 }
