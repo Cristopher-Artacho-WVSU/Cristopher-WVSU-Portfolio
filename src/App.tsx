@@ -136,14 +136,12 @@ const scrollRight = () => {
     md:relative md:top-0 md:w-full order-1 md:order-2 xl:pr-[1rem] 
   ">
     <img
-    src="/images/pict.png"
+    src="/images/portrait.png"
     alt="Background"
     className="
-      lg:aspect-[1] 
-      md:aspect-[1/1.5] 
       md:relative md:mt-[15vh] md:w-auto md:h-auto 
       order-1 md:order-2 
-      mt-[5vh] aspect-[1/2] 
+      mt-[5vh] aspect-[1] 
     "
   />
   </div>
