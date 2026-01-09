@@ -1,3 +1,3 @@
-declare module "./firebase" {
-  export const db: any;
-}
+import { Firestore } from "firebase/firestore";
+
+export const db: Firestore;
