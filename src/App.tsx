@@ -122,9 +122,7 @@ const scrollRight = () => {
                 Contact Me
                 <ArrowRight
                   size={16}
-                  className=" xl:scale-x-[8] 
-                  lg:scale-x-[6] 
-                  md:scale-x-[4]
+                  className="
                   scale-x-[2]
                   transition-transform duration-300 group-hover:translate-x-1"
                 />
@@ -189,7 +187,7 @@ const scrollRight = () => {
         <p className="xl:text-xl_content xl:pt-[1rem] xl:pr-[3rem] xl:-mr-[0rem]
         lg:text-lg_content lg:pt-[0.75rem] lg:-mr-[3rem]
         md:text-md_content md:pt-[0.75rem] md:-mr-[2.25rem] md:mr-[0rem]
-        text-sm_content pt-[0.5rem] mr-[10rem] 
+        text-sm_content pt-[0.5rem] mr-[5rem] 
         font-normal font-inter text-font_white">
           I’m a Computer Science student from WVSU specializing in game development, website development, and intelligent systems. I transform ideas into interactive digital experiences by blending creativity with purposeful engineering. My work spans game development, interactive applications, and intelligent systems—focused on usability, performance, and meaningful design.
         </p>
@@ -267,7 +265,7 @@ const scrollRight = () => {
       <div className="xl:gap-[65rem] xl:mt-[4rem] 
       lg:gap-[50rem] lg:mt-[3rem] 
       md:gap-[40rem] md:mt-[3rem] 
-      gap-[20rem] mt-[3rem] 
+      gap-[15rem] mt-[3rem] 
       flex justify-center text-font_white">
         <button className="xl:text-xl_content
         lg:text-lg_content
@@ -278,9 +276,7 @@ const scrollRight = () => {
         >
           <ArrowLeft
                   size={16}
-                  className="xl:scale-x-[8] 
-                  lg:scale-x-[6] 
-                  md:scale-x-[4] 
+                  className="
                   scale-x-[2]
                   transition-transform duration-300 group-hover:translate-x-1"
                 />
@@ -296,9 +292,7 @@ const scrollRight = () => {
         >
           <ArrowRight
                   size={16}
-                  className="xl:scale-x-[8] 
-                  lg:scale-x-[6] 
-                  md:scale-x-[4]
+                  className="
                   scale-x-[2] 
                   transition-transform duration-300 group-hover:translate-x-1"
                 />
