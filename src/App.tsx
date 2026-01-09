@@ -38,9 +38,9 @@ const scrollRight = () => {
           <div className=" xl:pl-[5rem] xl:pt-[5rem] xl:mr-[2rem]
           lg:pl-[4rem] lg:pt-[7rem]
           md:pl-[3rem] md:pt-[9rem] md:order-1 md:items-start md:text-start md:px-[0rem]
-          pt-[14rem] px-[5rem]
+          pt-[24rem] px-[5rem]
           flex flex-col items-center justify-center text-center relative
-          order-2  z-10 h-full
+          order-2 z-10 h-full
           ">
             <p className="
                 xl:text-xl_heading1
@@ -141,7 +141,7 @@ const scrollRight = () => {
     className="
       md:relative md:mt-[15vh] md:w-auto md:h-auto 
       order-1 md:order-2 
-      mt-[5vh] aspect-[1] 
+      mt-[20vh] aspect-[1] 
     "
   />
   </div>
