@@ -143,7 +143,7 @@ const scrollRight = () => {
       md:aspect-[1/1.5] 
       md:relative md:mt-[15vh] md:w-auto md:h-auto 
       order-1 md:order-2 
-      mt-[5vh] aspect-[1/1.45] 
+      mt-[5vh] aspect-[1/2] 
     "
   />
   </div>
