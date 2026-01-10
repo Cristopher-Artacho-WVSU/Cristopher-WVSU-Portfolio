@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This portfolio website was created to showcase my skills as part of my application to [Company Name]. The development took place from **January 7 to January 10**.
+This portfolio website was created to showcase my skills as part of my application to MATA Technologies. The development took place from **January 7 to January 10**.
 
 ---
 
